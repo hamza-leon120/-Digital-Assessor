@@ -1,0 +1,23 @@
+mixin button(text) 
+    .button
+        a(href="#")= text
+
+mixin integration(one,tow,three)
+    div
+        .circle
+            p= one
+        p= tow
+        p= three
+
+mixin dashboard(one,tow,three,four)
+    div 
+        img(src= one, alt= tow)
+        div 
+            p= three
+            p= four
+
+mixin elevate(one,tow,three)
+    div 
+        i(class = one)
+        p= tow 
+        p= three

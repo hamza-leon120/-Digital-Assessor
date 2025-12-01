@@ -1,0 +1,114 @@
+include include/mixin.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        // style link
+        link(rel="stylesheet", href="./css/style.css")
+        link(rel="stylesheet", href="./css/all.min.css")
+        link(rel="stylesheet", href="./css/normalize.css")
+        // font link
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap' rel='stylesheet')
+    body 
+        //- start header
+        header 
+            .container 
+                .Brand
+                    .logo
+                    p Digital Assessor
+                .bar
+                    ul 
+                        li: a(href="#")  Overview
+                        li: a(href="#")  Features
+                        li: a(href="#")  Our Teamh
+                    +button("Get Started Now") 
+                i(class="fa-solid fa-bars")
+        //- end header
+        //- assessment section start
+        section(class="assessment")
+            .container 
+                img(src="./img/Image-lummi.jpg", alt="A person stands alone on a dimly lit indoor basketball court, illuminated by a bright overhead light. The scene feels dramatic and introspective.")
+                h1 Assessment Reimagined
+                p Transition from paper to digital effortlessly.
+                +button("Discover the Platform")
+        //- assessment section end
+        //- our-vision section start
+        section(class="our-vision")
+            .container
+                .vision
+                    h2 Our Vision
+                    p Empowering educators to accurately evaluate and track student progress through digital assessments.
+        //- our-vision section end
+        //- integration section start
+        section(class="integration")
+            .container
+                h2 Simple Integration
+                div
+                    +integration("1","Digitize Assessments","Easily convert paper tests into interactive digital formats")
+                    +integration("2","Real-Time Insights","Instantly analyze and understand student performance.")
+                    +integration("3","Comprehensive Reports","Detailed breakdowns to guide student success strategies.")
+        //- integration section end
+        //- dashboard section start
+        section(class="dashboard")
+            .container 
+                i(class="fa-solid fa-arrows-rotate")
+                h2 Interactive Dashboard
+                p A centralized system for all assessment data.
+                div 
+                    +dashboard("./img/Image-lummi-1.jpg","A woman with short hair in a yellow top stands against a wall, bathed in warm light. Her expression is calm and contemplative, with bold red lipstick.","User-Friendly Design","Intuitive interface for efficient assessment.")
+                    +dashboard("./img/Image-lummi-2-1.jpg","Cozy living room with a gray sectional sofa, neutral cushions, and throws. Large window, sunlight, plants, and bookshelves create a serene, inviting atmosphere.","Instant Feedback","Provide immediate evaluation to students.")
+                    +dashboard("./img/Image-lummi-3.jpg","Modern restaurant facade with a large glass window showcasing two empty tables inside. Red panels and hanging lights create a warm, inviting tone.","Strategic Analysis","Identify trends and make informed decisions.")
+                    +dashboard("./img/Image-lummi-4.jpg","Two women with long dark hair pose confidently. One wears a black top, the other an orange one. Neutral background, serious expressions. Fashion theme.","Collaborative Tools","Foster a community of sharing and growth.")
+                    +dashboard("./img/Image-lummi-5.jpg","A transparent pink suitcase with a black strap stands on a polished floor. The background features shiny orange foil drapes, creating a modern, vibrant ambiance","Secure Data","Reliable and safe storage of all assessment records.")
+                    +dashboard("./img/Image-lummi-6.jpg","Underwater scene of a sunken shipwreck with vibrant orange fish swimming over rusted metal, surrounded by deep blue water, conveying mystery and tranquility.","Accessibility Features","Ensure assessments are fair and inclusive.")
+                    +dashboard("./img/Image-lummi-7.jpg","Young woman with curly hair sits at a cluttered desk, turning to the camera. Walls are covered with posters, creating a creative, focused atmosphere.","Grading Automation","Save time with automatic scoring capabilities.")
+                    +dashboard("./img/Image-lummi-8.jpg","Elderly man in a suit joyfully rides a bicycle on a city street, surrounded by blurred cars and trees, conveying a sense of freedom and happiness.","Progress Tracking","Monitor student achievements over time.")
+                    +dashboard("./img/Image-lummi-9.jpg","Large indoor swimming pool with clear blue water, surrounded by a cheering audience. The atmosphere is competitive and energetic, with anticipation in the air.","Multi-Level Views","Analyze scores by class, grade, or school.")
+        //- dashboard section end
+        //- engage section start 
+        section(class="engage")
+            .container
+                .img-grid
+                    img(src="./img/Main-Image-lummi.jpg", alt="A branch with delicate white flowers and green leaves rests on softly draped green fabric beside a cup of tea, conveying a serene and soothing ambiance.")
+                    img(src="./img/Image-lummi-10.jpg", alt="A female athlete intensely sprints forward, sweat and determination visible on her face. Motion blur and warm tones convey speed and energy.")
+                    img(src="./img/Image-lummi-2.jpg", alt="Donuts baking in a dimly lit oven, arranged on metal racks. The warm glow from the oven light highlights their golden texture, creating an inviting ambiance.")
+                    img(src="./img/Tertiary-Image-lummi.jpg", alt="A bearded older man with deep wrinkles gazes solemnly to the side. The close-up highlights his weathered features against a soft, blurred background.")
+                div 
+                    h2 Engage and Excel
+                    p Empower every student's learning journey.
+        //- engage section start 
+        //- elevate section start
+        section(class="elevate")
+            .container 
+                .one
+                    h2 Elevate Education
+                    p Harness the power of digital assessments.
+                    +button("Join Our Community")
+                .two
+                    +elevate('fa-solid fa-camera',"Effortless Setup","Get up and running with no downtime.")
+                    +elevate("fa-solid fa-circle-check","Actionable Data","Utilize insights to support student growth.")
+                    +elevate("fa-solid fa-cloud","Scalable Solutions","Adapt and scale to meet institutional needs.")
+        //- elevate section end
+        //- footer start
+        footer 
+            .container 
+                div 
+                    i(class="fa-solid fa-heart")
+                    p HMZ 
+                ul 
+                    li: a(href="#")  Dashboard
+                    li: a(href="#")  How It Works
+                    li: a(href="#")  Educator Hub
+                div 
+                    i(class="fa-brands fa-twitter")
+                    i(class="fa-brands fa-square-instagram")
+                    i(class="fa-brands fa-linkedin")
+        //- footer end
+        //- buttone up
+        .up
+            i(class="fa-solid fa-arrow-up")
+        script(src="./main.js")
